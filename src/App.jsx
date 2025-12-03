@@ -7,7 +7,8 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "http://3.110.209.88:8000";
+// Replace this URL with your actual Cloudflare tunnel URL
+const API_BASE = "https://meanwhile-urban-identical-ion.trycloudflare.com";
 
 const videoTypes = [
   {
