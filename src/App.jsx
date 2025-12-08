@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://distributors-discuss-exhibits-primary.trycloudflare.com";
+const API_BASE = "https://heard-passage-deeply-worcester.trycloudflare.com";
 
 const videoTypes = [
   {
