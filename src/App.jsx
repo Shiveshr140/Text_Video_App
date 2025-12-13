@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://inflation-digit-agree-glass.trycloudflare.com";
+const API_BASE = "const videoTypes = [https://fantasy-undergraduate-tremendous-rebate.trycloudflare.com";
 
 const videoTypes = [
   {
@@ -118,9 +118,6 @@ function App() {
     }
     // For 'query' type, keep it simple with just content and language
 
-    console.log('Sending request to:', `${API_BASE}${selectedVideo.endpoint}`);
-    console.log('Payload:', payload);
-
     try {
       const response = await fetch(`${API_BASE}${selectedVideo.endpoint}`, {
         method: 'POST',
@@ -130,16 +127,11 @@ function App() {
         body: JSON.stringify(payload)
       });
 
-      console.log('Response status:', response.status);
-
       if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Response error:', errorText);
         throw new Error('Failed to start video generation');
       }
 
       const data = await response.json();
-      console.log('Response data:', data);
       setJobId(data.job_id);
     } catch (err) {
       console.error('Error generating video:', err);
