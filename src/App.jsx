@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://aged-idle-assembly-tries.trycloudflare.com";
+const API_BASE = "https://inflation-digit-agree-glass.trycloudflare.com";
 
 const videoTypes = [
   {
