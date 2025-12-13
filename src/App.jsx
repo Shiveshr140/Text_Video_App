@@ -7,7 +7,8 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "const videoTypes = [https://fantasy-undergraduate-tremendous-rebate.trycloudflare.com";
+
+const API_BASE = "https://fantasy-undergraduate-tremendous-rebate.trycloudflare.com";
 
 const videoTypes = [
   {
