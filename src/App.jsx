@@ -8,7 +8,7 @@ import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
 
-const API_BASE = "https://expense-membership-flying-docs.trycloudflare.com"
+const API_BASE = "https://jeffrey-wave-move-gst.trycloudflare.com"
 const videoTypes = [
   {
     id: 'text',
