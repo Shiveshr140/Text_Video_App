@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://journalists-mate-dietary-expired.trycloudflare.com"
+const API_BASE = "https://molecules-charitable-cooking-detector.trycloudflare.com"
 const videoTypes = [
   {
     id: 'text',
