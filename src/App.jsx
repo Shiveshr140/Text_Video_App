@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://installations-salt-cage-believed.trycloudflare.com"
+const API_BASE = "https://appear-workout-bench-recently.trycloudflare.com"
 const videoTypes = [
   {
     id: 'text',
