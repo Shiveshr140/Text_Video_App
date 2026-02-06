@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://introduce-boat-mood-income.trycloudflare.com"
+const API_BASE = "https://genre-become-thumbnails-awards.trycloudflare.com"
 const videoTypes = [
   {
     id: 'text',
