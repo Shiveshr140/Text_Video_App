@@ -7,7 +7,20 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://genre-become-thumbnails-awards.trycloudflare.com"
+const API_BASE = "https://nancy-equipped-cincinnati-britannica.trycloudflare.com"
+
+const supportedLanguages = [
+  { key: 'english', code: 'en-IN', label: 'English' },
+  { key: 'hindi', code: 'hi-IN', label: 'हिन्दी (Hindi)' },
+  { key: 'tamil', code: 'ta-IN', label: 'தமிழ் (Tamil)' },
+  { key: 'kannada', code: 'kn-IN', label: 'ಕನ್ನಡ (Kannada)' },
+  { key: 'telugu', code: 'te-IN', label: 'తెలుగు (Telugu)' },
+  { key: 'malayalam', code: 'ml-IN', label: 'മലയാളം (Malayalam)' },
+  { key: 'bengali', code: 'bn-IN', label: 'বাংলা (Bengali)' },
+  { key: 'marathi', code: 'mr-IN', label: 'मराठी (Marathi)' },
+  { key: 'gujarati', code: 'gu-IN', label: 'ગુજરાતી (Gujarati)' },
+];
+
 const videoTypes = [
   {
     id: 'text',
@@ -38,6 +51,7 @@ const videoTypes = [
 function App() {
   const [selectedType, setSelectedType] = useState(null);
   const [content, setContent] = useState('');
+  const [selectedLanguage, setSelectedLanguage] = useState('english');
   const [isGenerating, setIsGenerating] = useState(false);
   const [jobId, setJobId] = useState(null);
   const [status, setStatus] = useState('idle');
@@ -105,7 +119,7 @@ function App() {
     // Build payload based on video type
     let payload = {
       content: content,
-      language: 'english'
+      language: selectedType === 'query' ? selectedLanguage : 'english'
     };
 
     // Add renderer for text and code videos
@@ -174,6 +188,29 @@ function App() {
             />
           ))}
         </div>
+
+        {selectedType === 'query' && (
+          <motion.div
+            className="language-selector"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <label htmlFor="language-select">🌐 Select Language:</label>
+            <select
+              id="language-select"
+              value={selectedLanguage}
+              onChange={(e) => setSelectedLanguage(e.target.value)}
+              disabled={isGenerating}
+            >
+              {supportedLanguages.map((lang) => (
+                <option key={lang.key} value={lang.key}>
+                  {lang.label}
+                </option>
+              ))}
+            </select>
+          </motion.div>
+        )}
 
         <InputSection
           selectedType={selectedType}
