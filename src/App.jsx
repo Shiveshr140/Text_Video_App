@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://nancy-equipped-cincinnati-britannica.trycloudflare.com"
+const API_BASE = "https://coupled-keyboard-timeline-sort.trycloudflare.com"
 
 const supportedLanguages = [
   { key: 'english', code: 'en-IN', label: 'English' },
