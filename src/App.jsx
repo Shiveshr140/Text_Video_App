@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://mate-wife-supplied-cancer.trycloudflare.com"
+const API_BASE = "https://claims-capable-editing-carried.trycloudflare.com"
 
 const supportedLanguages = [
   { key: 'english', code: 'en-IN', label: 'English' },
