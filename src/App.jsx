@@ -7,7 +7,7 @@ import StatusIndicator from './components/StatusIndicator';
 import VideoPlayer from './components/VideoPlayer';
 import './App.css';
 
-const API_BASE = "https://martha-concerned-thumbnails-from.trycloudflare.com"
+const API_BASE = "https://clock-seq-throwing-rapidly.trycloudflare.co"
 
 
 const supportedLanguages = [
